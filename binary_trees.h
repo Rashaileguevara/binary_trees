@@ -87,5 +87,6 @@ size_t binary_tree_left_most_depth(const binary_tree_t *tree);
 int _is_perfect(size_t req_depth, size_t depth, const binary_tree_t *tree);
 queue_t *insert_to_queue(queue_t **queue, const binary_tree_t *tree);
 binary_tree_t *pop_from_queue(queue_t **queue);
+int binary_tree_is_avl(const binary_tree_t *tree);
 
 #endif
