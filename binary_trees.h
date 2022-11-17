@@ -80,6 +80,7 @@ bst_t *bst_insert(bst_t **tree, int value);
 bst_t *array_to_bst(int *array, size_t size);
 bst_t *bst_search(const bst_t *tree, int value);
 bst_t *bst_remove(bst_t *root, int value);
+int binary_tree_is_avl(const binary_tree_t *tree);
 
 /* Helpers */
 size_t _binary_tree_height(const binary_tree_t *tree);
@@ -87,6 +88,6 @@ size_t binary_tree_left_most_depth(const binary_tree_t *tree);
 int _is_perfect(size_t req_depth, size_t depth, const binary_tree_t *tree);
 queue_t *insert_to_queue(queue_t **queue, const binary_tree_t *tree);
 binary_tree_t *pop_from_queue(queue_t **queue);
-int binary_tree_is_avl(const binary_tree_t *tree);
+
 
 #endif
